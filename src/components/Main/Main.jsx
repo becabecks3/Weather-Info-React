@@ -24,7 +24,7 @@ function Main() {
   return (
       <section className='main-container'>
         <h1>Tiempo en los próximos 5 días</h1>
-      <Form setCity={setFilterCity}/>
+      <Form setFilterCity={setFilterCity}/>
       <List forecast={forecast} />
       </section>
   )

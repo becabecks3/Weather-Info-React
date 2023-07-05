@@ -9,6 +9,7 @@ const List = ({ forecast }) => {
     return <p>No se ha encontrado</p>;
   }
 
+  // Filtro la info para que se imprima solo la temp de 1 dia a las 12pm
   const filteredData = forecast.list.reduce((acc, info) => {
     const date = info.dt_txt.split(' ')[0];
     const time = info.dt_txt.split(' ')[1];
